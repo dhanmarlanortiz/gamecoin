@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    height: calc(100vh - 56px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    section {
+        padding: 50px 0;
+    }
+
+    .banner {
+        background-color: #FCC729;
+        font-size: 500;
+    }    
+}
+
+// rJHmVr7gn7axaqcVgjLh7KHZDFHgTxYNBo
+// rDixzx6ND4prdhDUhMve7UG67eXohftB5X
+// rfskUij48xDGUKpH9GRXdd6mDYdvFBo3yg
+// rGQ9NZzKGCyqMDUyLPKRZ1udFiuURcuHHU
+// rM746tTsvguUx5s5cokftrZjEhJ4kHtsBw
+// rGQ9NZzKGCyqMDUyLPKRZ1udFiuURcuHHU
