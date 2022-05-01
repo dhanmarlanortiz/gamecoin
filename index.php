@@ -36,7 +36,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+                <ul class="navbar-nav my-4 my-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link" href="#game-mechanics">Mechanics</a>
                     </li>
@@ -66,13 +66,14 @@
                 </a>
             </div>
         </section>
+                
         <section class="" id="game-mechanics">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 order-md-2 col-lg-5 text-center align-self-center">
-                        <img class="img-fluid" src="images/nft-collectables-300.png" alt="">
+                    <div class="col-12 col-md-6 text-center col-lg-5 offset-lg-1 align-self-center">
+                        <img class="img-fluid mb-5 mb-md-0" src="images/nft-collectables-300.png" alt="">
                     </div>
-                    <div class="col-12 col-md-6 order-md-1 col-lg-5 offset-lg-1 align-self-center">
+                    <div class="col-12 col-md-6 col-lg-5 align-self-center">
                         <h3>Game Mechanics</h3>
                         <ul>
                             <li>Player may win or lose in the game</li>
@@ -82,18 +83,20 @@
                             <li>Spin or draw will be done everyday at 1200H GMT </li>
                             <li>The number of winners will be posted on twitter <a href="https://twitter.com/bgamecoin?s=20&t=EAQO9j2v31Crc_ZS0NkMRQ" target="_blank">@bgamecoin</a></li>
                             <li>The reward will be sent to your Xumm wallet.</li>
-                        </ul>
+                        </ul>                        
                     </div>
                 </div>
+                
             </div>
         </section>
+
         <section class="" id="how-to-play">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 text-center col-lg-5 offset-lg-1 align-self-center">
-                        <img class="img-fluid" src="images/man-playing-inside-mobile-300.png" alt="">
+                    <div class="col-12 col-md-6 order-md-2 col-lg-5 text-center align-self-center">
+                        <img class="img-fluid mb-5 mb-md-0" src="images/man-playing-inside-mobile-300.png" alt="">                        
                     </div>
-                    <div class="col-12 col-md-6 col-lg-5 align-self-center">
+                    <div class="col-12 col-md-6 order-md-1 col-lg-5 offset-lg-1 align-self-center">
                         <h3>How to play</h3>
                         <ol>
                             <li>Select lucky number that you want to bet</li>
@@ -103,18 +106,23 @@
                         </ol>
                     </div>
                 </div>
-                
             </div>
         </section>
+        
         <section class="" id="play-game">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h2>Lucky Pick Number</h2>
+                    <div class="col-12 text-center">
+                        <h2>Lucky Pick Number
+                        </h2>
+                        <p class="text-muted">
+                            <small>Select your lucky number from cards 1 to 6 below</small>
+                        </p>
+                        <br>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 mb-2 col-md-2 offset-md-3">
                         <div class="card text-center">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rJHmVr7gn7axaqcVgjLh7KHZDFHgTxYNBo">
@@ -124,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 mb-2 col-md-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rDixzx6ND4prdhDUhMve7UG67eXohftB5X">
@@ -134,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 mb-2 col-md-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rfskUij48xDGUKpH9GRXdd6mDYdvFBo3yg">
@@ -144,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 mb-2 col-md-2 offset-md-3">
                         <div class="card text-center">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rGQ9NZzKGCyqMDUyLPKRZ1udFiuURcuHHU">
@@ -154,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 mb-2 col-md-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rM746tTsvguUx5s5cokftrZjEhJ4kHtsBw">
@@ -164,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 mb-2 col-md-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rGQ9NZzKGCyqMDUyLPKRZ1udFiuURcuHHU">
@@ -192,7 +200,7 @@
                         </div>
                         <div class="modal-footer">
                             <input id="xumm-qr" type="text" class="form-control text-center">
-                            <button id="copy-qr-btn" class="btn btn-dark btn-sm p-2 mx-auto my-2" onclick="copyToClipBoard()">
+                            <button id="copy-qr-btn" class="btn btn-warning btn-sm p-2 mx-auto my-2" onclick="copyToClipBoard()">
                                 <span class="p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
                                     <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
