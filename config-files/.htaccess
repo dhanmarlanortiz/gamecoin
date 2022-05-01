@@ -1,5 +1,5 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^bgamecoin.com$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.bgamecoin.com$
-RewriteCond %{REQUEST_URI} !home/repositories/
-RewriteRule (.*) /home/repositories/gamecoin/$1 [L]
+RewriteCond %{REQUEST_URI} !repositories/gamecoin/
+RewriteRule (.*) /repositories/gamecoin/$1 [L]
