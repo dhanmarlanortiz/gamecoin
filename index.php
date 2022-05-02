@@ -16,20 +16,24 @@
 	<meta property="og:description" content="The Gamecoin is a crypto token created under XRPL. This platform offers a unique utilization of the token. Gamecoin is solely used to run the game thus, making it more valuable as time goes by." />
 	<meta property="og:url" content="https://bgamecoin.com/" />
 	<meta property="og:site_name" content="Gamecoin" />	
-	<meta property="og:image" content="https://bgamecoin.com/images/gamecoin-logo.jpg" />
+	<meta property="og:image" content="https://bgamecoin.com/images/og-page-screenshot.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Est. reading time">
 	<meta name="twitter:data1" content="0 minutes">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>gamecoin</title>
+    <title>Gamecoin</title>
 </head>
 <body>
 
     <nav id="lucky-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="<?php echo $_SERVER['REQUEST_SCHEME'] . "://" .  $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>">
                 <img src="images/gamecoin-logo.jpg" alt="" width="30" height="24">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,6 +61,7 @@
 
     <!-- <main data-bs-spy="scroll" data-bs-target="#lucky-navbar" data-bs-offset="0" class="" tabindex="0"> -->
     <main>
+
         <section class="banner">
             <div class="container">
                 <h1>Gamecoin</h1>

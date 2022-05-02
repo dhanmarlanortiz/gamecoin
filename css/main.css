@@ -21,8 +21,16 @@ main section {
 main .banner {
   background-color: #FCC729;
   padding: 50px 0;
-  position: relative;
-  z-index: -1;
+}
+@media screen and (max-width: 991px) {
+  main .banner {
+    position: relative;
+    z-index: 0;
+  }
+  main .banner h1, main .banner p, main .banner .btn {
+    position: relative;
+    z-index: 1;
+  }
 }
 main .banner > .container {
   background-image: url("../images/online-bank-banking-concept-mobile-phone-with-falling-coin-payment-online-finance-management-dark-800.png");
@@ -50,10 +58,6 @@ main .banner > .container {
   main .banner > .container {
     background-position: 75% 50%;
   }
-}
-main .banner h1, main .banner p, main .banner .btn {
-  position: relative;
-  z-index: 1;
 }
 main .banner h1 {
   font-family: "Roboto Condensed", sans-serif;
