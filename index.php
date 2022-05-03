@@ -231,12 +231,12 @@
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-start">
                     <ul class="footer-links mb-5 mb-md-0">
-                        <!-- <li>
-                            <a href="#game-mechanics">Game Mechanics</a>
-                        </li> -->
                         <li>
-                            <a href="#how-to-play">How to play</a>
+                            <a href="#game-mechanics">Game Mechanics</a>
                         </li>
+                        <!-- <li>
+                            <a href="#how-to-play">How to play</a>
+                        </li> -->
                         <li>
                             <a href="#play-game">Play Game</a>
                         </li>
@@ -297,7 +297,7 @@
             document.getElementById("copy-qr-btn-text").innerHTML = "Copied";
         }
 
-        addAnimation('game-mechanics-card', 'animate__fadeInUp');
+        // addAnimation('game-mechanics-card', 'animate__fadeInUp');
         addAnimation('card', 'animate__bounceIn');
         
         function addAnimation(element_class, animate_class) {

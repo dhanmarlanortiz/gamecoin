@@ -154,7 +154,7 @@ main a {
   }
 }
 .card:hover {
-  transform: translateY(-4px);
+  margin-top: -4px;
   transition: all ease-in-out 0.2s;
 }
 .card .card-body {
@@ -296,6 +296,11 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
 #play-game {
   padding-top: 50px;
   background-color: #f2f2f2;
+}
+
+.btn-dark:hover {
+  background-color: transparent;
+  color: #212529;
 }
 
 /*# sourceMappingURL=main.css.map */
