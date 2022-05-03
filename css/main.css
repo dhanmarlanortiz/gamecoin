@@ -275,11 +275,10 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
   color: #fcc729;
 }
 
-#game-mechanics {
-  padding-bottom: 50px;
+.white-bubble {
   background-color: #f2f2f2;
 }
-#game-mechanics .row {
+.white-bubble .row {
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
   border-radius: 15px;
   padding: 50px 0;
@@ -294,13 +293,59 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
 }
 
 #play-game {
-  padding-top: 50px;
+  padding-top: 70px;
   background-color: #f2f2f2;
 }
 
 .btn-dark:hover {
   background-color: transparent;
   color: #212529;
+}
+
+#countdown-banner {
+  padding: 50px 0 20px;
+  background-color: #030303;
+  background-image: url(../images/abstract-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+#countdown-banner:before {
+  content: "";
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5), inset 0px -5px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.countdown-header {
+  font-weight: 500;
+  color: #fff;
+  max-width: 251px;
+  margin: 0 auto 25px;
+  padding: 0 15px;
+}
+
+.countdown-wrapper {
+  direction: rtl;
+  margin: 0 auto;
+}
+
+.countdown-timer {
+  margin: 0 auto;
+  direction: ltr;
+  width: 251px;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+}
+.countdown-timer iframe {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

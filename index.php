@@ -29,6 +29,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <title>Gamecoin</title>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPC78927L8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BPC78927L8');
+    </script>
+
 </head>
 <body>
 
@@ -73,31 +85,28 @@
             </div>
         </section>
                 
-        <section class="" id="game-mechanics">
+        <section class="white-bubble pb-5" id="game-mechanics">        
             <div class="container">
                 <div class="row game-mechanics-card animate__animated">
                     <div class="col-12 col-md-6 text-center col-lg-5 offset-lg-1 align-self-center">
                         <img class="img-fluid mb-5 mb-md-0" src="images/nft-collectables-300.png" alt="">
                     </div>
                     <div class="col-12 col-md-6 col-lg-5 align-self-center">
-                        <h3>Mechanics of the game:</h3>
+                        <h3>Mechanics of the game:</h3>                        
                         <ul>
                             <li>Use GAMECOIN only in the game</li>
-                            <li>Select lucky number that you want</li>
-                            <li>Scan the QR code or copy the address in xumm wallet app</li>
                             <li>The token to be used for staking is 400 Gamecoin per player</li>
-                            <li>Lucky winner will get up to 3x of staked Gamecoin.<br>Example : 400 x 3 = 400 GAMECOIN</li>
+                            <li>Lucky winner will get up to 3x of staked Gamecoin.<br>Example: 400 x 3 = 1200 Gamecoin</li>
                             <li>Spin, dice, or draw will be done everyday at 1200H GMT</li>
-                            <li>The number of winners will be posted on twitter <a href="https://twitter.com/bgamecoin?s=20&t=EAQO9j2v31Crc_ZS0NkMRQ" target="_blank">@bgamecoin</a> and the reward will be sent to your Xumm wallet.</li>
-                            <li>To those who will not win in the game, your token will be locked up for 1 year and will be credited to your Xumm wallet. There is no lose in this game.</li>
+                            <li>The number of winners will be posted on twitter <a href="https://twitter.com/bgamecoin?s=20&amp;t=EAQO9j2v31Crc_ZS0NkMRQ" target="_blank">@bgamecoin</a> and the reward will be sent to your Xumm wallet.</li>
+                            <li>To those who will not win in the game, your token will be locked up for 1 year and will be credited to your Xumm wallet. There is no loss in this game.</li>
                         </ul>
                     </div>
-                </div>
-                
+                </div>                
             </div>
         </section>
 
-        <!-- <section class="" id="how-to-play">
+        <section class="white-bubble pt-5" id="how-to-play">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-2 col-lg-5 text-center align-self-center">
@@ -105,16 +114,32 @@
                     </div>
                     <div class="col-12 col-md-6 order-md-1 col-lg-5 offset-lg-1 align-self-center">
                         <h3>How to play</h3>
-                        <ol>
-                            <li>Select lucky number that you want to bet</li>
+                        <ul>
+                            <li>Select or Pick the lucky number that you want</li>
                             <li>Scan the QR code or copy the address in xumm wallet app</li>
-                            <li>Send 100 gamecoin or more that you want to play</li>
-                            <li>Lucky winner will get triple based on their bet</li>
-                        </ol>
+                            <li>Select GAMECOIN </li>
+                            <li>Send 400 Gamecoin amount to be used in lucky pick and lock</li>
+                            <li>Sign the transaction</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+
+        <section id="countdown-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="countdown-header">Time until next draw</p>
+                        <div class="countdown-wrapper">
+                            <div class="countdown-timer">
+                                <iframe width="251" height="335" src="https://w2.countingdownto.com/4154797" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section class="" id="play-game">
             <div class="container">
@@ -124,7 +149,6 @@
                         <p class="text-muted">
                             <small>Select your lucky number from cards 1 to 6 below</small>
                         </p>
-                        <br>
                     </div>
                 </div>
                 <div class="row">
@@ -218,7 +242,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
@@ -270,6 +293,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
@@ -325,8 +350,6 @@
             }
         }
 
-
-
         // $(window).scroll(function(){
         // $(".nav-item").removeClass("active");
         // $(".active").parent().addClass("active");
@@ -343,17 +366,17 @@
         //     });
         // });
 
-    //     document.querySelectorAll("a").forEach(function (a) {
-    //     a.addEventListener("click", function (event) {
-    //       event.preventDefault();
-    //       const hash = event.target.getAttribute("href");
-    //       const scrollTarget = document.querySelector(hash);
-          
-    //       // Some additional logic
-    //       const headerHeight = 90;
-    //       window.scrollTo(0, scrollTarget.offsetTop - headerHeight);
-    //     });
-    //   });
+        //     document.querySelectorAll("a").forEach(function (a) {
+        //     a.addEventListener("click", function (event) {
+        //       event.preventDefault();
+        //       const hash = event.target.getAttribute("href");
+        //       const scrollTarget = document.querySelector(hash);
+            
+        //       // Some additional logic
+        //       const headerHeight = 90;
+        //       window.scrollTo(0, scrollTarget.offsetTop - headerHeight);
+        //     });
+        //   });
 
     </script>    
 </body>
