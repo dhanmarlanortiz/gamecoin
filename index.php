@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <title>Gamecoin</title>
 </head>
@@ -42,11 +43,11 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav my-4 my-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#game-mechanics">Mechanics</a>
+                        <a class="nav-link" href="#game-mechanics">Game Mechanics</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#how-to-play">How to play</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#play-game">Play Game</a>
                     </li>
@@ -74,28 +75,29 @@
                 
         <section class="" id="game-mechanics">
             <div class="container">
-                <div class="row">
+                <div class="row game-mechanics-card animate__animated">
                     <div class="col-12 col-md-6 text-center col-lg-5 offset-lg-1 align-self-center">
                         <img class="img-fluid mb-5 mb-md-0" src="images/nft-collectables-300.png" alt="">
                     </div>
                     <div class="col-12 col-md-6 col-lg-5 align-self-center">
-                        <h3>Game Mechanics</h3>
+                        <h3>Mechanics of the game:</h3>
                         <ul>
-                            <li>Player may win or lose in the game</li>
                             <li>Use GAMECOIN only in the game</li>
-                            <li>Minimum bet is 100 gamecoin to be qualified </li>
-                            <li>Lucky winner will get 3x gamecoin based on their bet. Example: 1000 gamecoin bets will be 1000x 3 = 3000 gamecoin</li>
-                            <li>Spin or draw will be done everyday at 1200H GMT </li>
-                            <li>The number of winners will be posted on twitter <a href="https://twitter.com/bgamecoin?s=20&t=EAQO9j2v31Crc_ZS0NkMRQ" target="_blank">@bgamecoin</a></li>
-                            <li>The reward will be sent to your Xumm wallet.</li>
-                        </ul>                        
+                            <li>Select lucky number that you want</li>
+                            <li>Scan the QR code or copy the address in xumm wallet app</li>
+                            <li>The token to be used for staking is 400 Gamecoin per player</li>
+                            <li>Lucky winner will get up to 3x of staked Gamecoin.<br>Example : 400 x 3 = 400 GAMECOIN</li>
+                            <li>Spin, dice, or draw will be done everyday at 1200H GMT</li>
+                            <li>The number of winners will be posted on twitter <a href="https://twitter.com/bgamecoin?s=20&t=EAQO9j2v31Crc_ZS0NkMRQ" target="_blank">@bgamecoin</a> and the reward will be sent to your Xumm wallet.</li>
+                            <li>To those who will not win in the game, your token will be locked up for 1 year and will be credited to your Xumm wallet. There is no lose in this game.</li>
+                        </ul>
                     </div>
                 </div>
                 
             </div>
         </section>
 
-        <section class="" id="how-to-play">
+        <!-- <section class="" id="how-to-play">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-2 col-lg-5 text-center align-self-center">
@@ -112,14 +114,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         
         <section class="" id="play-game">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2>Lucky Pick Number
-                        </h2>
+                        <h2>Lucky Pick and Lock</h2>
                         <p class="text-muted">
                             <small>Select your lucky number from cards 1 to 6 below</small>
                         </p>
@@ -128,7 +129,7 @@
                 </div>
                 <div class="row">
                     <div class="col-4 mb-2 col-md-2 offset-md-3">
-                        <div class="card text-center">
+                        <div class="card text-center animate__animated">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rJHmVr7gn7axaqcVgjLh7KHZDFHgTxYNBo">
                                     <h5 class="card-title">1</h5>
@@ -138,7 +139,7 @@
                         </div>
                     </div>
                     <div class="col-4 mb-2 col-md-2">
-                        <div class="card text-center">
+                        <div class="card text-center animate__animated" style="animation-delay:0.6s">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rDixzx6ND4prdhDUhMve7UG67eXohftB5X">
                                     <h5 class="card-title">2</h5>
@@ -148,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-4 mb-2 col-md-2">
-                        <div class="card text-center">
+                        <div class="card text-center animate__animated" style="animation-delay:0.7s">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rfskUij48xDGUKpH9GRXdd6mDYdvFBo3yg">
                                     <h5 class="card-title">3</h5>
@@ -158,7 +159,7 @@
                         </div>
                     </div>
                     <div class="col-4 mb-2 col-md-2 offset-md-3">
-                        <div class="card text-center">
+                        <div class="card text-center animate__animated" style="animation-delay:0.8s">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rGQ9NZzKGCyqMDUyLPKRZ1udFiuURcuHHU">
                                     <h5 class="card-title">4</h5>
@@ -168,7 +169,7 @@
                         </div>
                     </div>
                     <div class="col-4 mb-2 col-md-2">
-                        <div class="card text-center">
+                        <div class="card text-center animate__animated" style="animation-delay:0.9s">
                             <div class="card-body">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rM746tTsvguUx5s5cokftrZjEhJ4kHtsBw">
                                     <h5 class="card-title">5</h5>
@@ -178,9 +179,9 @@
                         </div>
                     </div>
                     <div class="col-4 mb-2 col-md-2">
-                        <div class="card text-center">
+                        <div class="card text-center animate__animated" style="animation-delay:1s">
                             <div class="card-body">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rGQ9NZzKGCyqMDUyLPKRZ1udFiuURcuHHU">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#lucky-modal" data-bs-qr="rhPjSXKJnnhrrCmf4JtxdVvB1XbYT6hF8o">
                                     <h5 class="card-title">6</h5>
                                     <p>Select</p>
                                 </a>
@@ -230,9 +231,9 @@
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-start">
                     <ul class="footer-links mb-5 mb-md-0">
-                        <li>
+                        <!-- <li>
                             <a href="#game-mechanics">Game Mechanics</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="#how-to-play">How to play</a>
                         </li>
@@ -254,14 +255,14 @@
                                 <span>Twitter</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="social-facebook" href="" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                                   </svg>
                                 <span>facebook</span>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 
@@ -294,6 +295,34 @@
             navigator.clipboard.writeText(copyText.value);
 
             document.getElementById("copy-qr-btn-text").innerHTML = "Copied";
+        }
+
+        addAnimation('game-mechanics-card', 'animate__fadeInUp');
+        addAnimation('card', 'animate__bounceIn');
+        
+        function addAnimation(element_class, animate_class) {
+            document.addEventListener("DOMContentLoaded", function(event) {
+                document.addEventListener("scroll", function(event) {
+                    const animatedBoxes = document.getElementsByClassName(element_class);
+                    const windowOffsetTop = window.innerHeight + window.scrollY;
+    
+                    Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+                        const animatedBoxOffsetTop = animatedBox.offsetTop;
+    
+                        if (windowOffsetTop >= animatedBoxOffsetTop) {
+                            addClass(animatedBox, animate_class);
+                        }
+                    });
+                });
+            });
+        }
+        
+
+        function addClass(element, className) {
+            const arrayClasses = element.className.split(" ");
+            if (arrayClasses.indexOf(className) === -1) {
+                element.className += " " + className;
+            }
         }
 
 

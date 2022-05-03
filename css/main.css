@@ -69,7 +69,7 @@ main .banner p {
   font-weight: 300;
 }
 main h3 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 main h2 {
   font-size: 36px;
@@ -92,6 +92,27 @@ main ul li, main ol li {
   color: #030303;
   font-weight: 300;
 }
+main ul {
+  list-style: none;
+}
+main ul li {
+  position: relative;
+  padding-left: 5px;
+}
+main ul li::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  position: relative;
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  border: solid 3px #fcc729;
+}
+main a {
+  color: #fcc729;
+  text-decoration: none;
+}
 
 .navbar {
   background-color: #000;
@@ -107,8 +128,7 @@ main ul li, main ol li {
   width: auto;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #how-to-play {
@@ -116,23 +136,26 @@ main ul li, main ol li {
 }
 #how-to-play img {
   max-width: 250px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .card {
   margin: 10px auto;
   border-radius: 10px;
-  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
-          box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
   overflow: hidden;
   border: solid 1px #fcc729;
+  transition: all ease-in-out 0.2s;
 }
 @media screen and (min-width: 992px) {
   .card {
     max-width: 200px;
     min-height: 200px;
   }
+}
+.card:hover {
+  transform: translateY(-4px);
+  transition: all ease-in-out 0.2s;
 }
 .card .card-body {
   padding: 0;
@@ -153,10 +176,8 @@ main ul li, main ol li {
   top: 0;
   left: 50%;
   z-index: 1;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  filter: invert(1);
+  transform: translateX(-50%);
   opacity: 0.025;
   height: calc(100% - 42px);
 }
@@ -254,6 +275,17 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
   color: #fcc729;
 }
 
+#game-mechanics {
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+#game-mechanics .row {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
+  border-radius: 15px;
+  padding: 50px 0;
+  background: #fff;
+}
+
 #lucky-modal .modal-content {
   border: solid 2px #FCC729;
 }
@@ -262,5 +294,8 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
 }
 
 #play-game {
-  padding: 150px 0 200px;
+  padding-top: 50px;
+  background-color: #f2f2f2;
 }
+
+/*# sourceMappingURL=main.css.map */
