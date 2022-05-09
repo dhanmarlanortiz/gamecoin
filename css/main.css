@@ -131,12 +131,13 @@ main a {
   transform: translateY(-50%);
 }
 
-#how-to-play {
-  background-color: #f2f2f2;
-}
 #how-to-play img {
   max-width: 250px;
   transform: scaleX(-1);
+}
+
+#game-mechanics {
+  background-color: #f2f2f2;
 }
 
 .card {
@@ -346,6 +347,22 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.win-banner {
+  text-align: center;
+  background-color: #030303;
+  background-image: url(../images/win-upto-1b-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
+  border-radius: 15px;
+  padding: 50px 25px;
+}
+.win-banner img {
+  max-width: 450px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,15 +7,15 @@
     <meta name="author" content="Dhan Marlan Ortiz">
     <meta name="description" content="The Gamecoin is a crypto token created under XRPL. This platform offers a unique utilization of the token. Gamecoin is solely used to run the game thus, making it more valuable as time goes by." />
 	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	
+
     <link rel="canonical" href="https://bgamecoin.com/" />
-	
+
     <meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Gamecoin" />
 	<meta property="og:description" content="The Gamecoin is a crypto token created under XRPL. This platform offers a unique utilization of the token. Gamecoin is solely used to run the game thus, making it more valuable as time goes by." />
 	<meta property="og:url" content="https://bgamecoin.com/" />
-	<meta property="og:site_name" content="Gamecoin" />	
+	<meta property="og:site_name" content="Gamecoin" />
 	<meta property="og:image" content="https://bgamecoin.com/images/og-page-screenshot.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Est. reading time">
@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Gamecoin</title>
 
+    <meta name="google-site-verification" content="jn__A5BBVpgHoWZ34LvQmI5PJvy3tUDgPJU-ct4Xcng" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPC78927L8"></script>
@@ -47,7 +48,7 @@
     <nav id="lucky-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="<?php echo $_SERVER['REQUEST_SCHEME'] . "://" .  $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>">
-                <img src="images/gamecoin-logo.jpg" alt="" width="30" height="24">
+                <img src="images/gamecoin-logo.jpg" alt="" width="30" height="24" alt="Gamecoin logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,15 +85,26 @@
                 </a>
             </div>
         </section>
-                
-        <section class="white-bubble pb-5" id="game-mechanics">        
+
+        <section class="" id="">
+            <div class="container">
+                <div class="win-banner">
+                    <a href="#play-game">
+                        <img src="images/win-upto-1b-banner.png" class="" alt="win up to 1,000,000,000 Gamecoin">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="" id="game-mechanics">
             <div class="container">
                 <div class="row game-mechanics-card animate__animated">
                     <div class="col-12 col-md-6 text-center col-lg-5 offset-lg-1 align-self-center">
-                        <img class="img-fluid mb-5 mb-md-0" src="images/nft-collectables-300.png" alt="">
+                        <img class="img-fluid mb-5 mb-md-0" src="images/nft-collectables-300.png" alt="Mechanics of the game image">
                     </div>
                     <div class="col-12 col-md-6 col-lg-5 align-self-center">
-                        <h3>Mechanics of the game:</h3>                        
+                        <h3>Mechanics of the game:</h3>
                         <ul>
                             <li>Use GAMECOIN only in the game</li>
                             <li>The token to be used for staking is 400 Gamecoin per player</li>
@@ -102,15 +114,15 @@
                             <li>To those who will not win in the game, your token will be locked up for 1 year and will be credited to your Xumm wallet. There is no loss in this game.</li>
                         </ul>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
 
-        <section class="white-bubble pt-5" id="how-to-play">
+        <section class="" id="how-to-play">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-2 col-lg-5 text-center align-self-center">
-                        <img class="img-fluid mb-5 mb-md-0" src="images/man-playing-inside-mobile-300.png" alt="">                        
+                        <img class="img-fluid mb-5 mb-md-0" src="images/man-playing-inside-mobile-300.png" alt="How to play image">
                     </div>
                     <div class="col-12 col-md-6 order-md-1 col-lg-5 offset-lg-1 align-self-center">
                         <h3>How to play</h3>
@@ -140,7 +152,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="" id="play-game">
             <div class="container">
                 <div class="row">
@@ -219,11 +231,11 @@
             <div class="modal fade" id="lucky-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header border-bottom-0 modal-header pb-0">                            
+                        <div class="modal-header border-bottom-0 modal-header pb-0">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body pt-0 text-center">
-                            <img src="" alt="">
+                            <img src="" alt="XUMM QR code link">
                             <p class="text-muted">
                                 <small>Please scan the QR code with XUMM on your smartphone</small>
                             </p>
@@ -249,7 +261,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 text-center text-md-start">
-                    <img class="footer-logo" src="images/gamecoin-logo-transparent.png" alt="">
+                    <img class="footer-logo" src="images/gamecoin-logo-transparent.png" alt="Gamecoin footer logo">
                     <p class="mb-5 mb-md-0">2022 &copy; Gamecoin<br>All rights reserved.</p>
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-start">
@@ -288,7 +300,7 @@
                         </li> -->
                     </ul>
                 </div>
-                
+
 
             </div>
         </div>
@@ -324,16 +336,16 @@
 
         // addAnimation('game-mechanics-card', 'animate__fadeInUp');
         addAnimation('card', 'animate__bounceIn');
-        
+
         function addAnimation(element_class, animate_class) {
             document.addEventListener("DOMContentLoaded", function(event) {
                 document.addEventListener("scroll", function(event) {
                     const animatedBoxes = document.getElementsByClassName(element_class);
                     const windowOffsetTop = window.innerHeight + window.scrollY;
-    
+
                     Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
                         const animatedBoxOffsetTop = animatedBox.offsetTop;
-    
+
                         if (windowOffsetTop >= animatedBoxOffsetTop) {
                             addClass(animatedBox, animate_class);
                         }
@@ -341,7 +353,7 @@
                 });
             });
         }
-        
+
 
         function addClass(element, className) {
             const arrayClasses = element.className.split(" ");
@@ -371,13 +383,13 @@
         //       event.preventDefault();
         //       const hash = event.target.getAttribute("href");
         //       const scrollTarget = document.querySelector(hash);
-            
+
         //       // Some additional logic
         //       const headerHeight = 90;
         //       window.scrollTo(0, scrollTarget.offsetTop - headerHeight);
         //     });
         //   });
 
-    </script>    
+    </script>
 </body>
 </html>

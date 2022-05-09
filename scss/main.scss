@@ -161,13 +161,17 @@ main {
 }
 
 #how-to-play {
-    background-color: #f2f2f2;
 
     img {
         max-width: 250px;
         transform: scaleX(-1);
     }
 }
+
+#game-mechanics {
+    background-color: #f2f2f2;
+}
+
 // #game-mechanics,
 // #how-to-play {
 //     .row {
@@ -417,5 +421,22 @@ footer {
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+}
+
+.win-banner {
+    text-align: center;
+    background-color: #030303;
+    background-image: url(../images/win-upto-1b-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+    border-radius: 15px;
+    padding: 50px 25px;
+
+    img {
+        max-width: 450px;
+        width: 100%;
     }
 }
