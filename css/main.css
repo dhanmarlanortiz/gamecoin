@@ -113,9 +113,12 @@ main a {
   color: #fcc729;
   text-decoration: none;
 }
+main p {
+  font-weight: 300;
+}
 
 .navbar {
-  background-color: #000;
+  background-color: #030303;
 }
 
 .navbar-brand {
@@ -289,7 +292,8 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
 #lucky-modal .modal-content {
   border: solid 2px #FCC729;
 }
-#lucky-modal input {
+
+.form-control {
   border: solid 1px #FCC729;
 }
 
@@ -363,6 +367,71 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
 .win-banner img {
   max-width: 450px;
   width: 100%;
+}
+
+#mariland-qr {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 5px;
+}
+
+.mariland #xumm-qr {
+  max-width: 360px;
+  margin: 15px auto;
+}
+.mariland #how-to-buy ul, .mariland #how-to-buy ol {
+  max-width: 500px;
+  text-align: left;
+  margin: 40px auto 20px;
+}
+.mariland #how-to-buy ul li, .mariland #how-to-buy ol li {
+  margin-bottom: 15px;
+}
+.mariland #how-to-buy ul li::marker, .mariland #how-to-buy ol li::marker {
+  color: #fcc729;
+  font-size: 22px;
+  font-weight: 400;
+}
+.mariland #map img {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+.mariland #rules .container {
+  max-width: 1000px;
+}
+.mariland .important-note {
+  z-index: -1;
+  position: relative;
+}
+
+.text-with-icon {
+  padding: 20px;
+  font-size: 0;
+}
+.text-with-icon .img-wrapper,
+.text-with-icon .text-wrapper {
+  display: inline-block;
+  font-size: initial;
+  vertical-align: middle;
+}
+.text-with-icon .img-wrapper {
+  width: 100px;
+}
+.text-with-icon .img-wrapper img {
+  display: block;
+  max-height: 60px;
+  object-fit: scale-down;
+  margin: 0 auto;
+}
+.text-with-icon .text-wrapper {
+  width: calc(100% - 100px);
+  padding-left: 20px;
+}
+.text-with-icon .text-wrapper p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
