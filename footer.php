@@ -17,9 +17,9 @@
                         <li>
                             <a href="#how-to-buy">How to buy</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#note">Note</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="https://xrpl.services/?issuer=rGRbhMeHyi5yi1x5vkFrZD8sHzkr5HfH3g&currency=47414D45434F494E000000000000000000000000&limit=100000000000">Trustline</a>
                         </li>

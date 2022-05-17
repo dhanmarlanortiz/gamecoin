@@ -17,6 +17,7 @@ main {
 }
 main section {
   padding: 100px 0;
+  overflow: hidden;
 }
 main .banner {
   background-color: #FCC729;
@@ -73,7 +74,6 @@ main h3 {
 }
 main h2 {
   font-size: 36px;
-  font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   text-align: center;
   color: #030303;
@@ -107,10 +107,10 @@ main ul li::before {
   position: absolute;
   top: 6px;
   left: -20px;
-  border: solid 3px #fcc729;
+  border: solid 3px #FCC729;
 }
 main a {
-  color: #fcc729;
+  color: #FCC729;
   text-decoration: none;
 }
 main p {
@@ -148,7 +148,7 @@ main p {
   border-radius: 10px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
   overflow: hidden;
-  border: solid 1px #fcc729;
+  border: solid 1px #FCC729;
   transition: all ease-in-out 0.2s;
 }
 @media screen and (min-width: 992px) {
@@ -167,7 +167,7 @@ main p {
 .card .card-body a {
   text-decoration: none;
   display: block;
-  background: #fcc729;
+  background: #FCC729;
   position: relative;
 }
 .card .card-body a::before {
@@ -206,7 +206,7 @@ main p {
 .card .card-body p {
   margin: 0;
   text-transform: unset;
-  background: #fcc729;
+  background: #FCC729;
   font-weight: 600;
   font-size: 12px;
   padding: 12px 0;
@@ -249,7 +249,7 @@ footer ul.footer-links li a {
   text-decoration: none;
 }
 footer ul.footer-links li a:hover, footer ul.footer-links li a:focus {
-  color: #fcc729;
+  color: #FCC729;
 }
 footer ul.footer-links li:last-child {
   margin-bottom: 0;
@@ -276,7 +276,7 @@ footer ul.socials li a span {
   display: block;
 }
 footer ul.socials li a:hover, footer ul.socials li a:focus {
-  color: #fcc729;
+  color: #FCC729;
 }
 
 .white-bubble {
@@ -369,32 +369,25 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
   width: 100%;
 }
 
-#mariland-qr {
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
-  padding: 10px;
-  max-width: 250px;
+.mariland img.mariland-qr {
+  max-width: 200px;
   border-radius: 5px;
+  width: 100%;
 }
-
-.mariland #xumm-qr {
+.mariland input#xumm-qr {
   max-width: 360px;
-  margin: 15px auto;
+  margin: 10px auto 15px;
+  border: none;
+  padding: 0;
+  font-size: 14px;
 }
-.mariland #how-to-buy ul, .mariland #how-to-buy ol {
-  max-width: 500px;
-  text-align: left;
-  margin: 40px auto 20px;
+.mariland input#xumm-qr:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
-.mariland #how-to-buy ul li, .mariland #how-to-buy ol li {
-  margin-bottom: 15px;
-}
-.mariland #how-to-buy ul li::marker, .mariland #how-to-buy ol li::marker {
-  color: #fcc729;
-  font-size: 22px;
-  font-weight: 400;
-}
-.mariland #map img {
-  max-width: 800px;
+.mariland #map .img-thumbnail {
+  max-width: 600px;
   margin: 0 auto;
   display: block;
   width: 100%;
@@ -432,6 +425,124 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
 }
 .text-with-icon .text-wrapper p {
   margin: 0;
+}
+
+.note {
+  background: rgba(252, 199, 41, 0.15);
+  padding: 20px;
+  text-align: left;
+  color: #030303;
+  position: relative;
+  margin-right: -10px;
+  margin-left: -10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.note i.bi {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  font-size: 20px;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.note .note-heading {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.note p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.note p:last-of-type {
+  margin: 0;
+}
+.note ul {
+  margin: 0;
+  list-style: disc;
+  padding: 5px 25px 10px;
+}
+.note ul li {
+  margin: 0;
+  font-size: 12px;
+  padding: 0;
+}
+.note ul li::before {
+  content: none;
+}
+
+.process-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: auto;
+  font-size: 0;
+}
+.process-container .process-card {
+  width: 100%;
+  font-size: initial;
+  vertical-align: top;
+  padding: 10px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .process-container .process-card {
+    width: 50%;
+  }
+  .process-container .process-card.process-card-1 .process-card-content, .process-container .process-card.process-card-2 .process-card-content {
+    min-height: 430px;
+  }
+  .process-container .process-card.process-card-3 .process-card-content, .process-container .process-card.process-card-4 .process-card-content {
+    min-height: 180px;
+  }
+  .process-container .process-card.process-card-3 {
+    clear: left;
+  }
+}
+@media screen and (min-width: 992px) {
+  .process-container .process-card {
+    width: 33.3333333333%;
+  }
+  .process-container .process-card.process-card-1 .process-card-content, .process-container .process-card.process-card-2 .process-card-content {
+    min-height: 440px;
+  }
+  .process-container .process-card.process-card-3 .process-card-content, .process-container .process-card.process-card-4 .process-card-content {
+    min-height: auto;
+  }
+  .process-container .process-card.process-card-3 {
+    clear: none;
+  }
+}
+.process-container .process-card .process-card-content {
+  border: solid 1px #FCC729;
+  padding: 40px 20px 20px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  margin-top: 40px;
+}
+.process-container .process-card .process-card-content .process-count {
+  background-color: #FCC729;
+  color: #030303;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  border-radius: 25px;
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+.process-container .process-card .process-card-content .process-count:after {
+  font-size: 12px;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  font-weight: 400;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=main.css.map */

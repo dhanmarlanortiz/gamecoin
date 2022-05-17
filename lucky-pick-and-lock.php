@@ -1,6 +1,6 @@
 <?php 
     include('header.php');
-    include('navigation.php');
+    // include('navigation.php');
 ?>
 
 <!-- <main data-bs-spy="scroll" data-bs-target="#lucky-navbar" data-bs-offset="0" class="" tabindex="0"> -->

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 
+$color-primary: #FCC729;
+$color-black: #030303;
+
 * {
     font-family: 'Poppins', sans-serif;
     
@@ -11,8 +14,9 @@ html {
 }
 
 h1, h3, p, ul li  {
-    color: #030303;
+    color: $color-black;
 }
+
 
 main {
     color: #fff;
@@ -24,10 +28,11 @@ main {
 
     section {
         padding: 100px 0;
+        overflow: hidden;
     }
 
     .banner {
-        background-color: #FCC729;
+        background-color: $color-primary;
         padding: 50px 0;
 
         @media screen and (max-width: 991px) {
@@ -86,11 +91,11 @@ main {
 
     h2 {
         font-size: 36px;
-        font-family: "Roboto Condensed", sans-serif;
+        // font-family: "Roboto Condensed", sans-serif;
         font-weight: 500;
         text-align: center;
         // margin-bottom: 25px;
-        color: #030303;
+        color: $color-black;
 
         @media screen and (min-width: 992px) {
             font-size: 46px;
@@ -104,7 +109,7 @@ main {
 
         li {
             margin-bottom: 5px;
-            color: #030303;
+            color: $color-black;
             font-weight: 300;
         }
     }
@@ -124,13 +129,13 @@ main {
                 position: absolute;
                 top: 6px;
                 left: -20px;
-                border: solid 3px #fcc729;
+                border: solid 3px $color-primary;
             }
         }
     }
 
     a {
-        color: #fcc729;
+        color: $color-primary;
         text-decoration: none;
     }
 
@@ -147,7 +152,7 @@ main {
 // rGQ9NZzKGCyqMDUyLPKRZ1udFiuURcuHHU
 
 .navbar {
-    background-color: #030303;
+    background-color: $color-black;
 }
 
 .navbar-brand {
@@ -191,7 +196,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
     overflow: hidden;
-    border: solid 1px #fcc729;
+    border: solid 1px $color-primary;
     transition: all ease-in-out 0.2s;
 
     @media screen and (min-width: 992px) {
@@ -210,7 +215,7 @@ main {
         a {
             text-decoration: none;
             display: block;
-            background: #fcc729;       
+            background: $color-primary;       
             position: relative;
     
             &::before {
@@ -236,7 +241,7 @@ main {
         }
 
             h5 {
-            color: #030303;
+            color: $color-black;
             margin: 0;
             background-color: #fff;
             font-size: 28PX;
@@ -251,7 +256,7 @@ main {
         p {
             margin: 0;
             text-transform: unset;
-            background: #fcc729;
+            background: $color-primary;
             font-weight: 600;            
             font-size: 12px;
             padding: 12px 0;
@@ -266,7 +271,7 @@ main {
 
 footer {
     padding: 30px 0;
-    background-color: #030303;
+    background-color: $color-black;
     
     .footer-logo {
         max-width: 100px;
@@ -298,7 +303,7 @@ footer {
 
                     &:hover,
                     &:focus {
-                        color: #fcc729;
+                        color: $color-primary;
                     }
                 }
 
@@ -336,9 +341,9 @@ footer {
 
                     &:hover,
                     &:focus {
-                        // border-color: #fcc729;
-                        // background-color: #fcc729;
-                        color: #fcc729;
+                        // border-color: $color-primary;
+                        // background-color: $color-primary;
+                        color: $color-primary;
                     }
                 }
             }
@@ -361,13 +366,13 @@ footer {
 
 #lucky-modal {
     .modal-content {
-        border: solid 2px #FCC729;
+        border: solid 2px $color-primary;
     }
     
 }
 
 .form-control {
-    border: solid 1px #FCC729;
+    border: solid 1px $color-primary;
 }
 
 #play-game {
@@ -382,7 +387,7 @@ footer {
 
 #countdown-banner {
     padding: 50px 0 20px;
-    background-color: #030303;    
+    background-color: $color-black;    
     background-image: url(../images/abstract-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -431,7 +436,7 @@ footer {
 
 .win-banner {
     text-align: center;
-    background-color: #030303;
+    background-color: $color-black;
     background-image: url(../images/win-upto-1b-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -446,43 +451,56 @@ footer {
     }
 }
 
-#mariland-qr {
-    box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);   
-    padding: 10px;
-    max-width: 250px;
-    border-radius: 5px;
-}
 
 .mariland {
-    #xumm-qr {
-        max-width: 360px;
-        margin: 15px auto;
+
+    img.mariland-qr {
+        max-width: 200px;
+        border-radius: 5px;
+        width: 100%;
     }
 
-    #how-to-buy {
-        ul, ol {
-            max-width: 500px;
-            text-align: left;
-            margin: 40px auto 20px;
+    input#xumm-qr {
+        max-width: 360px;
+        margin: 10px auto 15px;
+        border: none;
+        padding: 0;
+        font-size: 14px;
 
-            li {
-                margin-bottom: 15px;
-                
-                &::marker {
-                    color: #fcc729;
-                    font-size: 22px;
-                    font-weight: 400;
-                }
-            }
-
+        &:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
         }
     }
 
-    #map img {
-        max-width: 800px;
-        margin: 0 auto;
-        display: block;
-        width: 100%;
+    #how-to-buy {
+        // ul, ol {
+        //     max-width: 500px;
+        //     text-align: left;
+        //     margin: 40px auto 20px;
+
+        //     li {
+        //         margin-bottom: 15px;
+                
+        //         &::marker {
+        //             color: $color-primary;
+        //             font-size: 22px;
+        //             font-weight: 400;
+        //         }
+        //     }
+        // }
+
+
+    }
+
+    #map {
+        .img-thumbnail {
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+        }
     }
 
     #rules .container {
@@ -523,6 +541,157 @@ footer {
 
         p {
             margin: 0;
+        }
+    }
+}
+
+.note {
+    background: rgba(252, 199, 41, 0.15);
+    // border-left: solid 3px $color-primary;
+    padding: 20px;
+    text-align: left;
+    color: #030303;
+    position: relative;
+    margin-right: -10px;
+    margin-left: -10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+
+    i.bi {
+        position: absolute;
+        right: 5px;
+        top: -10px;
+        font-size: 20px;
+        text-shadow: 4px 2px 4px rgba(0, 0, 0, .4);
+    }
+
+    .note-heading {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-bottom: 5px;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+
+    ul {
+        margin: 0;
+        list-style: disc;
+        padding: 5px 25px 10px;
+
+        li {
+            margin: 0;
+            font-size: 12px;
+            padding: 0;
+            &::before {
+                content: none;
+            }
+
+        }
+    }
+}
+
+.process-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: auto;
+    font-size: 0;
+    
+    .process-card {
+        width: 100%;
+        font-size: initial;
+        vertical-align: top;
+        padding: 10px;
+        float: left;
+
+        @media screen and (min-width: 768px) {
+            width: 50%;
+
+            &.process-card-1,
+            &.process-card-2 {
+                .process-card-content {
+                    min-height: 430px;
+                }
+            }
+
+            &.process-card-3,
+            &.process-card-4 {
+                .process-card-content {
+                    min-height: 180px;
+                }
+            }
+
+            &.process-card-3 {
+                clear: left;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            width: calc(100%/3);
+            
+            &.process-card-1,
+            &.process-card-2 {
+                .process-card-content {
+                    min-height: 440px;
+                }
+            }
+
+            &.process-card-3,
+            &.process-card-4 {
+                .process-card-content {
+                    min-height: auto;
+                }
+            }
+            
+
+            &.process-card-3 {
+                clear: none;
+            }
+        }
+
+        .process-card-content {
+            border: solid 1px $color-primary;
+            padding: 40px 20px 20px;
+            border-radius: 10px;
+            // box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+            background: #fff;
+            position: relative;
+            margin-top: 40px;
+            // background-color: rgba(252, 199, 41, 0.1);
+
+            .process-count {
+                background-color: $color-primary;
+                color: $color-black;
+                padding: 10px;
+                height: 50px;
+                width: 50px;
+                display: block;
+                border-radius: 25px;
+                position: absolute;
+                top: -27px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 20px;
+
+                &:after {
+                    // content: "Step";
+                    font-size: 12px;
+                    transform: translateX(-50%);
+                    position: absolute;
+                    left: 50%;
+                    bottom: 5px;
+                    font-weight: 400;
+                    opacity: 0.6;
+                }
+            }
         }
     }
 }

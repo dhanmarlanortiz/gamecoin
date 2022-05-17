@@ -9,12 +9,21 @@
             include('banner-gamecoin.php');
         ?>
 
-        <section id="rules">
+        <section id="map">
+            <div class="container">
+                <h2 class="mb-5 text-center">Mariland</h2>
+                <div class="img-thumbnail animate__animated animate__fadeIn">
+                    <img src="images/mariland-map.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="rules" class="bg-light">
             <div class="container clearfix">
                 <h3 class="text-center">Rules</h3>
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <div class="text-with-icon animate__animated animate__fadeIn" style="animation-delay:0.7s;">
+                        <div class="text-with-icon animate__animated" style="animation-delay:0.7s;">
                             <div class="img-wrapper">
                                 <img src="images/flat-icon-coin.png" alt="">
                             </div>
@@ -24,7 +33,7 @@
                         </div>
                     </div>                
                     <div class="col-12 col-md-6">
-                        <div class="text-with-icon animate__animated animate__fadeIn" style="animation-delay:0.8s;">
+                        <div class="text-with-icon animate__animated" style="animation-delay:0.8s;">
                             <div class="img-wrapper">
                                 <img src="images/flat-icon-wallet.png" alt="">
                             </div>
@@ -37,7 +46,7 @@
                 <br class="d-none d-md-block">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <div class="text-with-icon animate__animated animate__fadeIn" style="animation-delay:0.9s;">
+                        <div class="text-with-icon animate__animated" style="animation-delay:0.9s;">
                             <div class="img-wrapper">
                                 <img src="images/flat-icon-interest.png" alt="">
                             </div>
@@ -47,7 +56,7 @@
                         </div>
                     </div>                
                     <div class="col-12 col-md-6">
-                        <div class="text-with-icon animate__animated animate__fadeIn" style="animation-delay:1s;">
+                        <div class="text-with-icon animate__animated" style="animation-delay:1s;">
                             <div class="img-wrapper">
                                 <img src="images/flat-icon-resell.png" alt="">
                             </div>
@@ -60,36 +69,68 @@
             </div>
         </section>
 
-        <section id="map" style="background: #29c7da;">
-            <div class="container">
-                <h3 class="text-white text-center">Mariland Map</h3>
-                <img src="images/mariland-map.png" class="img-fluid" alt="">
-            </div>
-        </section>
-
-        <section id="how-to-buy" class="bg-light">
+        <section id="how-to-buy">
             <div class="container text-center">
                 <h3>How to buy Digital Land</h3>
-                <ol>
-                    <li>Scan the QR code or copy the address in the Xumm wallet.</li>
-                    <li>Select GAMECOIN and the payment cost for each digital land or town is worth 500,000 Gamecoin.</li>
-                </ol>
 
-                <img class="img-fluid mt-4 mb-4 mariland-qr animate__animated" src="images/mariland-qr.png" alt="XUMM QR" id="mariland-qr">
-
-                <input id="xumm-qr" type="text" value="rwTyYCBctUezWq2riBgDyqFun9bPpCtHJP" class="form-control text-center">
-                <button id="copy-qr-btn" class="btn btn-warning btn-sm p-2 mx-auto my-2" onclick="copyToClipBoard()">
-                    <span class="p-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/></svg>
-                    </span>
-                    <span id="copy-qr-btn-text" class="p-1">Copy</span>
-                </button>
+                <div class="process-container clearfix">
+                    <div class="process-card process-card-1 clearfix">
+                        <div class="process-card-content animate__animated" style="animation-delay:0.7s;">
+                            <span class="process-count">1</span>
+                            <p>Scan the QR code or copy the address in the Xumm wallet.</p>
+                            <img class="img-fluid mt-4 mx-auto d-block mariland-qr animate__animated" src="images/mariland-qr.png" alt="XUMM QR" id="mariland-qr">
+                            <input id="xumm-qr" type="text" value="rwTyYCBctUezWq2riBgDyqFun9bPpCtHJP" class="form-control text-center">
+                            <button id="copy-qr-btn" class="btn btn-warning btn-sm p-2 mx-auto my-2 mx-auto d-block" onclick="copyToClipBoard()">
+                                <span class="p-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/></svg>
+                                </span>
+                                <span id="copy-qr-btn-text" class="p-1">Copy code</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="process-card process-card-2 clearfix">
+                        <div class="process-card-content animate__animated" style="animation-delay:0.8s;">
+                            <span class="process-count">2</span>
+                            <p>Select GAMECOIN and the payment cost for each digital land or town is worth 500,000 Gamecoin.</p>
+                            <div class="note">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <p class="note-heading">Important Note</p>
+                                <p>Before clicking "Slide to Send" in your Xumm wallet, type these details in the Public MEMO</p>
+                                <ul class="clearfix">
+                                    <li>Title or name</li>
+                                    <li>Land number</li>
+                                    <li>Payment price</li>
+                                    <li>Date</li>
+                                </ul>
+                                <p>The New owner will be the one to decide on what Name should be given in the Land</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-card process-card-3 clearfix">
+                        <div class="process-card-content animate__animated" style="animation-delay:0.9s;">
+                            <span class="process-count">3</span>
+                            <p>
+                                <strong>Send 500,000 Gamecoin</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-card process-card-4 clearfix">
+                        <div class="process-card-content animate__animated" style="animation-delay:1s;">
+                            <span class="process-count">4</span>
+                            <p>Sign the transaction</p>
+                            <div class="note">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <p>The Map will be updated to input the name or title of the new owner.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="note">
+        <!-- <section id="note">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 text-center col-lg-5 offset-lg-1 align-self-center">
@@ -107,7 +148,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <script>
@@ -136,8 +177,9 @@
 
         // addAnimation('game-mechanics-card', 'animate__fadeInUp');
         // addAnimation('text-with-icon', 'animate__bounceIn');
-        addAnimation('important-note', 'animate__slideInLeft');
-        addAnimation('mariland-qr', 'animate__bounceIn');
+        addAnimation('text-with-icon', 'animate__fadeIn');
+        addAnimation('process-card-content', 'animate__fadeInUp');
+        // addAnimation('mariland-qr', 'animate__bounceIn');
 
         function addAnimation(element_class, animate_class) {
             document.addEventListener("DOMContentLoaded", function(event) {

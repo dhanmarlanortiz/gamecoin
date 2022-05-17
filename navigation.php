@@ -9,17 +9,17 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav my-4 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#rules">Rules</a>
+                        <a class="nav-link active" href="#map">Mariland</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#map">Map</a>
+                        <a class="nav-link active" href="#rules">Rules</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#how-to-buy">How to buy</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" href="#note">Note</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link active" href="https://xrpl.services/?issuer=rGRbhMeHyi5yi1x5vkFrZD8sHzkr5HfH3g&currency=47414D45434F494E000000000000000000000000&limit=100000000000" target="_blank">Trustline</a>
                     </li>
