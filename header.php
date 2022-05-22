@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mariland.css">
     <title>Gamecoin</title>
 
     <meta name="google-site-verification" content="jn__A5BBVpgHoWZ34LvQmI5PJvy3tUDgPJU-ct4Xcng" />

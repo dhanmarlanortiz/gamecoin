@@ -7,16 +7,8 @@
 
         <?php 
             include('banner-gamecoin.php');
+            include('mariland-map.php');
         ?>
-
-        <section id="map">
-            <div class="container">
-                <h2 class="mb-5 text-center">Mariland</h2>
-                <div class="img-thumbnail animate__animated animate__fadeIn">
-                    <img src="images/mariland-map.png" class="img-fluid" alt="">
-                </div>
-            </div>
-        </section>
 
         <section id="rules" class="bg-light">
             <div class="container clearfix">

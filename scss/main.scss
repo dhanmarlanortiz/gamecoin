@@ -141,6 +141,10 @@ main {
 
     p {
         font-weight: 300;
+
+        strong {
+            font-weight: 500;
+        }
     }
 }
 
@@ -191,7 +195,7 @@ main {
 //     }
 // }
 
-.card {
+.lucky-pick-and-lock .card {
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
@@ -500,6 +504,10 @@ footer {
             margin: 0 auto;
             display: block;
             width: 100%;
+            
+            img {
+                background-color: #2ac7da;
+            }
         }
     }
 

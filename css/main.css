@@ -116,6 +116,9 @@ main a {
 main p {
   font-weight: 300;
 }
+main p strong {
+  font-weight: 500;
+}
 
 .navbar {
   background-color: #030303;
@@ -143,7 +146,7 @@ main p {
   background-color: #f2f2f2;
 }
 
-.card {
+.lucky-pick-and-lock .card {
   margin: 10px auto;
   border-radius: 10px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.03);
@@ -152,25 +155,25 @@ main p {
   transition: all ease-in-out 0.2s;
 }
 @media screen and (min-width: 992px) {
-  .card {
+  .lucky-pick-and-lock .card {
     max-width: 200px;
     min-height: 200px;
   }
 }
-.card:hover {
+.lucky-pick-and-lock .card:hover {
   margin-top: -4px;
   transition: all ease-in-out 0.2s;
 }
-.card .card-body {
+.lucky-pick-and-lock .card .card-body {
   padding: 0;
 }
-.card .card-body a {
+.lucky-pick-and-lock .card .card-body a {
   text-decoration: none;
   display: block;
   background: #FCC729;
   position: relative;
 }
-.card .card-body a::before {
+.lucky-pick-and-lock .card .card-body a::before {
   background-image: url(../images/gamecoin-logo-transparent.png);
   position: absolute;
   background-size: contain;
@@ -186,11 +189,11 @@ main p {
   height: calc(100% - 42px);
 }
 @media screen and (min-width: 991px) {
-  .card .card-body a::before {
+  .lucky-pick-and-lock .card .card-body a::before {
     height: calc(100% - 51px);
   }
 }
-.card .card-body h5 {
+.lucky-pick-and-lock .card .card-body h5 {
   color: #030303;
   margin: 0;
   background-color: #fff;
@@ -198,12 +201,12 @@ main p {
   padding: 25px 0;
 }
 @media screen and (min-width: 992px) {
-  .card .card-body h5 {
+  .lucky-pick-and-lock .card .card-body h5 {
     font-size: 42px;
     padding: 55px 0;
   }
 }
-.card .card-body p {
+.lucky-pick-and-lock .card .card-body p {
   margin: 0;
   text-transform: unset;
   background: #FCC729;
@@ -212,7 +215,7 @@ main p {
   padding: 12px 0;
 }
 @media screen and (min-width: 992px) {
-  .card .card-body p {
+  .lucky-pick-and-lock .card .card-body p {
     font-size: 18px;
     padding: 12px;
   }
@@ -391,6 +394,9 @@ footer ul.socials li a:hover, footer ul.socials li a:focus {
   margin: 0 auto;
   display: block;
   width: 100%;
+}
+.mariland #map .img-thumbnail img {
+  background-color: #2ac7da;
 }
 .mariland #rules .container {
   max-width: 1000px;
